@@ -43,6 +43,9 @@
 #include "../include/dynamics_rendering/ControlledForceFieldRenderable.hpp"
 #include "../include/dynamics_rendering/QuadRenderable.hpp"
 
+/* INCLUDES SUPPLEMNTAIRES NON PRESENTS DANS LES PRACTICALS */
+#include "../teachers/Geometries.hpp"
+
 /* NOS PROPRES CLASSES A INCLUDE ICI */
 
 void initialize_project_skyrim_2(Viewer& viewer) {
@@ -66,8 +69,6 @@ void initialize_project_skyrim_2(Viewer& viewer) {
   // Frame
   FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
   viewer.addRenderable(frame);
-
-  fprintf(stderr, "Skyrim chargé !\n");
 
   //Position the camera
   viewer.getCamera().setViewMatrix(
